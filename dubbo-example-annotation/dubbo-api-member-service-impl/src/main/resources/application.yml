@@ -1,0 +1,12 @@
+server: # 服务端口
+  port: 8081
+dubbo:
+  application:
+    name: member
+  protocol: # 采用协议方式和端口
+    name: dubbo
+    port: 20881
+  registry: # dubbo 注册中心地址
+    address: zookeeper://127.0.0.1:2181
+#  scan:  # 实现类扫包范围
+#    base-packages: com.member.api.impl

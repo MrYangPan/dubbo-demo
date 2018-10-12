@@ -1,0 +1,9 @@
+server: # 服务端口
+  port: 8082
+dubbo:
+  application:
+    name: order
+  registry: # dubbo 注册中心地址
+    address: zookeeper://127.0.0.1:2181
+  consumer: # 调用服务超时时间
+    timeout: 5000
